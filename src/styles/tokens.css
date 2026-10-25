@@ -1,0 +1,58 @@
+/* Tokens de diseño: mismos nombres y valores que las variables del archivo de Figma. */
+:root {
+  /* Primitivos (manual de identidad) */
+  --nf-verde-bosque: #0c291c;
+  --nf-beige-calido: #e7d8c2;
+  --nf-marfil-suave: #f8f5ef;
+
+  /* Semánticos */
+  --color-fondo-principal: var(--nf-marfil-suave);
+  --color-fondo-alterno: var(--nf-beige-calido);
+  --color-fondo-inverso: var(--nf-verde-bosque);
+  --color-fondo-sutil: rgb(12 41 28 / 0.06);
+  --color-texto-principal: var(--nf-verde-bosque);
+  --color-texto-secundario: rgb(12 41 28 / 0.72);
+  --color-texto-inverso: var(--nf-marfil-suave);
+  --color-texto-inverso-secundario: rgb(248 245 239 / 0.72);
+  --color-borde-sutil: rgb(12 41 28 / 0.14);
+  --color-borde-fuerte: var(--nf-verde-bosque);
+  --color-accion-principal: var(--nf-verde-bosque);
+  --color-accion-sobre-principal: var(--nf-marfil-suave);
+
+  /* Tipografía */
+  --font-display: 'Bodoni Moda Variable', 'Bodoni Moda', Didot, 'Bodoni 72', Georgia, serif;
+  --font-ui: 'Jost Variable', 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Espaciado y forma */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --radius-ninguno: 0;
+  --radius-sm: 2px;
+  --radius-completo: 999px;
+
+  /* Retícula */
+  --gutter: 16px;
+  --max-width: 1440px;
+  --header-h: 64px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --gutter: 80px;
+    --header-h: 84px;
+  }
+}

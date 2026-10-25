@@ -1,0 +1,875 @@
+{
+  "moneda": "COP",
+  "fuente": "Catalogo_Ramos.docx",
+  "productos": [
+    {
+      "id": "ramo-01-rosita",
+      "nombre": "Rosita",
+      "precio": 185000,
+      "foto": {
+        "archivo": "ramo-01-rosita",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo de rosas fucsia envuelto en papel blanco con lazos rosados.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-02-dulce-rubor",
+      "nombre": "Dulce Rubor",
+      "precio": 235000,
+      "foto": {
+        "archivo": "ramo-02-dulce-rubor",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo grande de lirios rosados, rosas y flores en tonos rosa y durazno, en papel blanco y rosa.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-03-mimi",
+      "nombre": "Mimi",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-03-mimi",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo de gerberas y flores rosadas, fucsia y lila, en papel blanco y rosado.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-04-amor-bonito",
+      "nombre": "Amor Bonito",
+      "precio": 750000,
+      "foto": {
+        "archivo": "ramo-04-amor-bonito",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo grande de lirios blancos con flores rojas y rosadas, en papel rosado.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-05-luna-rosa",
+      "nombre": "Luna Rosa",
+      "precio": 215000,
+      "foto": {
+        "archivo": "ramo-05-luna-rosa",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo de gerberas y lirios rosados con rosas color salmón, en papel rosado con lazo.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-06-cielo-dulce",
+      "nombre": "Cielo Dulce",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-06-cielo-dulce",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo de rosas rosadas, hortensia azul y flores amarillas, en papel blanco.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-07-nube",
+      "nombre": "Nube",
+      "precio": 250000,
+      "foto": {
+        "archivo": "ramo-07-nube",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo redondo de flores blancas y rosadas con toques naranja, en papel blanco de borde ondulado.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-08-bombon",
+      "nombre": "Bombón",
+      "precio": 250000,
+      "foto": {
+        "archivo": "ramo-08-bombon",
+        "ancho": 671,
+        "alto": 900,
+        "alt": "Ramo de lirios y rosas en tonos rosa y durazno, en papel rosado claro.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-09-petalito",
+      "nombre": "Petalito",
+      "precio": 260000,
+      "foto": {
+        "archivo": "ramo-09-petalito",
+        "ancho": 676,
+        "alto": 900,
+        "alt": "Ramo de rosas amarillas y flores blancas, en papel amarillo pálido.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-10-cupcake",
+      "nombre": "Cupcake",
+      "precio": 165000,
+      "foto": {
+        "archivo": "ramo-10-cupcake",
+        "ancho": 678,
+        "alto": 900,
+        "alt": "Ramo de flores amarillas, blancas y celestes con margaritas, en papel blanco con cinta azul.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-11-lulu",
+      "nombre": "Lulú",
+      "precio": 175000,
+      "foto": {
+        "archivo": "ramo-11-lulu",
+        "ancho": 674,
+        "alto": 900,
+        "alt": "Ramo de dalias rosado pálido con flores amarillas, en papel crema.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-12-rosa-chicle",
+      "nombre": "Rosa Chicle",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-12-rosa-chicle",
+        "ancho": 673,
+        "alto": 900,
+        "alt": "Ramo de tulipanes amarillos en papel crema con cinta blanca.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-13-sol-de-miel",
+      "nombre": "Sol de Miel",
+      "precio": 185000,
+      "foto": {
+        "archivo": "ramo-13-sol-de-miel",
+        "ancho": 659,
+        "alto": 900,
+        "alt": "Ramo de rosas rosadas y flores amarillas, en papel amarillo.",
+        "estado": "ok"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": []
+    },
+    {
+      "id": "ramo-14-coco",
+      "nombre": "Coco",
+      "precio": 185000,
+      "foto": {
+        "archivo": "ramo-14-coco",
+        "ancho": 682,
+        "alto": 900,
+        "alt": "Ramo de rosas color crema y amarillo con flores blancas y celestes, en papel marfil.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Comparte fotografía con otro ramo (Coco/Amapola); confirmado por el cliente el 2026-10-25."
+      ]
+    },
+    {
+      "id": "ramo-15-amapola",
+      "nombre": "Amapola",
+      "precio": 165000,
+      "foto": {
+        "archivo": "ramo-15-amapola",
+        "ancho": 675,
+        "alto": 900,
+        "alt": "Ramo de rosas color crema y amarillo con flores blancas y celestes, en papel marfil.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Comparte fotografía con otro ramo (Coco/Amapola); confirmado por el cliente el 2026-10-25."
+      ]
+    },
+    {
+      "id": "ramo-16-gelatina",
+      "nombre": "Gelatina",
+      "precio": 250000,
+      "foto": {
+        "archivo": "ramo-16-gelatina",
+        "ancho": 684,
+        "alto": 900,
+        "alt": "Ramo de rosas y tulipanes rosado pálido en papel blanco.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-17-brisa",
+      "nombre": "Brisa",
+      "precio": 160000,
+      "foto": {
+        "archivo": "ramo-17-brisa",
+        "ancho": 688,
+        "alto": 900,
+        "alt": "Ramo de rosas rojas en papel blanco con lunares vinotinto.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-18-merengue",
+      "nombre": "Merengue",
+      "precio": 185000,
+      "foto": {
+        "archivo": "ramo-18-merengue",
+        "ancho": 681,
+        "alto": 900,
+        "alt": "Ramo de rosas fucsia en papel transparente con cintas rosadas.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-19-fresita",
+      "nombre": "Fresita",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-19-fresita",
+        "ancho": 679,
+        "alto": 900,
+        "alt": "Ramo de rosas rojas rodeadas de flores blancas, con cinta roja.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-20-mariposa",
+      "nombre": "Mariposa",
+      "precio": 155000,
+      "foto": {
+        "archivo": "ramo-20-mariposa",
+        "ancho": 686,
+        "alto": 900,
+        "alt": "Ramo de lirios rosado pálido en papel blanco texturizado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-21-caramelo",
+      "nombre": "Caramelo",
+      "precio": 225000,
+      "foto": {
+        "archivo": "ramo-21-caramelo",
+        "ancho": 686,
+        "alto": 900,
+        "alt": "Ramo de rosas y flores en tonos rosa, durazno y blanco, con cinta rosada.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-22-princesa",
+      "nombre": "Princesa",
+      "precio": 215000,
+      "foto": {
+        "archivo": "ramo-22-princesa",
+        "ancho": 684,
+        "alto": 900,
+        "alt": "Ramo de tulipanes rosados con flores blancas pequeñas, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-23-petalo-feliz",
+      "nombre": "Pétalo Feliz",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-23-petalo-feliz",
+        "ancho": 686,
+        "alto": 900,
+        "alt": "Tulipanes rosados en una bolsa de papel kraft con ventana y tarjeta.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-24-algodon",
+      "nombre": "Algodón",
+      "precio": 145000,
+      "foto": {
+        "archivo": "ramo-24-algodon",
+        "ancho": 700,
+        "alto": 863,
+        "alt": "Ramo de rosas blancas con bordes rosados, en papel blanco.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-25-capullo",
+      "nombre": "Capullo",
+      "precio": 165000,
+      "foto": {
+        "archivo": "ramo-25-capullo",
+        "ancho": 700,
+        "alto": 875,
+        "alt": "Ramo de flores rosadas y blancas con follaje verde, en papel rosado y crema.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-26-lazo-rosa",
+      "nombre": "Lazo Rosa",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-26-lazo-rosa",
+        "ancho": 700,
+        "alto": 861,
+        "alt": "Ramo de gerberas y rosas en tonos rosa y salmón, en papel beige.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-27-dulce-abril",
+      "nombre": "Dulce Abril",
+      "precio": 205000,
+      "foto": {
+        "archivo": "ramo-27-dulce-abril",
+        "ancho": 700,
+        "alto": 864,
+        "alt": "Ramo de flores blancas y rosado pálido en papel transparente.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-28-chispa",
+      "nombre": "Chispa",
+      "precio": 220000,
+      "foto": {
+        "archivo": "ramo-28-chispa",
+        "ancho": 684,
+        "alto": 900,
+        "alt": "Ramo de gerberas rojas con un lirio rosado y rosas salmón, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"ramo lirio y gerberas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-29-perlita",
+      "nombre": "Perlita",
+      "precio": 155000,
+      "foto": {
+        "archivo": "ramo-29-perlita",
+        "ancho": 682,
+        "alto": 900,
+        "alt": "Ramo de claveles color coral con follaje de eucalipto, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"ramo buchón claveles\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-30-mi-vida",
+      "nombre": "Mi Vida",
+      "precio": 210000,
+      "foto": {
+        "archivo": "ramo-30-mi-vida",
+        "ancho": 685,
+        "alto": 900,
+        "alt": "Ramo de gerberas rosadas con flores blancas y verdes, en papel color durazno.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"ramo gerberas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-31-flor-de-luna",
+      "nombre": "Flor de Luna",
+      "precio": 160000,
+      "foto": {
+        "archivo": "ramo-31-flor-de-luna",
+        "ancho": 684,
+        "alto": 900,
+        "alt": "Rosas rojas en una caja negra con forma de corazón.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-32-tutti-frutti",
+      "nombre": "Tutti Frutti",
+      "precio": 175000,
+      "foto": {
+        "archivo": "ramo-32-tutti-frutti",
+        "ancho": 682,
+        "alto": 900,
+        "alt": "Ramo de rosas rojas y blancas en papel negro.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-33-panecito",
+      "nombre": "Panecito",
+      "precio": 155000,
+      "foto": {
+        "archivo": "ramo-33-panecito",
+        "ancho": 687,
+        "alto": 900,
+        "alt": "Ramo de rosas rojas con eucalipto, en papel blanco con cinta vinotinto.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-34-sonrisa",
+      "nombre": "Sonrisa",
+      "precio": 190000,
+      "foto": {
+        "archivo": "ramo-34-sonrisa",
+        "ancho": 681,
+        "alto": 900,
+        "alt": "Ramo de orquídeas blancas y rosadas en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto."
+      ]
+    },
+    {
+      "id": "ramo-35-aurora",
+      "nombre": "Aurora",
+      "precio": 195000,
+      "foto": {
+        "archivo": "ramo-35-aurora",
+        "ancho": 700,
+        "alto": 847,
+        "alt": "Ramo de rosas rosadas y blancas con flores blancas alrededor, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Rosas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-36-duquesa",
+      "nombre": "Duquesa",
+      "precio": 160000,
+      "foto": {
+        "archivo": "ramo-36-duquesa",
+        "ancho": 700,
+        "alto": 836,
+        "alt": "Ramo de girasoles con eucalipto, en papel beige.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Girasoles\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-37-bebe-rosa",
+      "nombre": "Bebé Rosa",
+      "precio": 230000,
+      "foto": {
+        "archivo": "ramo-37-bebe-rosa",
+        "ancho": 700,
+        "alto": 843,
+        "alt": "Ramo de rosas rosadas y blancas con lirios en botón y eucalipto.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Rosas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-38-jazmin",
+      "nombre": "Jazmín",
+      "precio": 255000,
+      "foto": {
+        "archivo": "ramo-38-jazmin",
+        "ancho": 700,
+        "alto": 845,
+        "alt": "Ramo de girasoles con flores rosadas pequeñas, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Girasoles\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-39-vainilla",
+      "nombre": "Vainilla",
+      "precio": 155000,
+      "foto": {
+        "archivo": "ramo-39-vainilla",
+        "ancho": 700,
+        "alto": 838,
+        "alt": "Ramo de gerberas rosadas y flores lila, en papel blanco con cinta rosada.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Gerberas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-40-malvavisco",
+      "nombre": "Malvavisco",
+      "precio": 235000,
+      "foto": {
+        "archivo": "ramo-40-malvavisco",
+        "ancho": 700,
+        "alto": 847,
+        "alt": "Ramo de lirios rosados con rosas y flores blancas, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Lirios\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-41-cerecita",
+      "nombre": "Cerecita",
+      "precio": 180000,
+      "foto": {
+        "archivo": "ramo-41-cerecita",
+        "ancho": 700,
+        "alto": 841,
+        "alt": "Ramo de gerberas color durazno con flores rojas pequeñas, en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Gerberas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-42-lila",
+      "nombre": "Lila",
+      "precio": 225000,
+      "foto": {
+        "archivo": "ramo-42-lila",
+        "ancho": 700,
+        "alto": 842,
+        "alt": "Ramo de rosas blancas con lirios rosados y flores rojas pequeñas.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Rosas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-43-estrellita",
+      "nombre": "Estrellita",
+      "precio": 225000,
+      "foto": {
+        "archivo": "ramo-43-estrellita",
+        "ancho": 700,
+        "alto": 845,
+        "alt": "Ramo de rosas rojas, blancas y rosadas en papel rosado.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Rosas\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-44-ternura",
+      "nombre": "Ternura",
+      "precio": 245000,
+      "foto": {
+        "archivo": "ramo-44-ternura",
+        "ancho": 700,
+        "alto": 837,
+        "alt": "Ramo de lirios rosados con flores rosadas y eucalipto.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Foto es captura de pantalla de Instagram con indicador de carrusel superpuesto.",
+        "Texto en la foto: \"Ramo Lirios\" (no está en el Word; no se usa como categoría oficial)."
+      ]
+    },
+    {
+      "id": "ramo-45-rose",
+      "nombre": "Rosé",
+      "precio": 135000,
+      "foto": {
+        "archivo": "ramo-45-rose",
+        "ancho": 1194,
+        "alto": 1600,
+        "alt": "Ramo de lirios rosados con eucalipto, envuelto en papel rosa con cinta de satín rosa.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Agregado el 2026-10-25 por pedido de FM. Precio $135.000 dado por FM.",
+        "Nombre propuesto por Claude a pedido de FM (\"invéntale nombre\")."
+      ]
+    },
+    {
+      "id": "ramo-46-canela",
+      "nombre": "Canela",
+      "precio": 135000,
+      "foto": {
+        "archivo": "ramo-46-canela",
+        "ancho": 1194,
+        "alto": 1600,
+        "alt": "Ramo de lirios rosados moteados con eucalipto, envuelto en papel kraft con cintas rosadas.",
+        "estado": "confirmada"
+      },
+      "descripcion": null,
+      "categoria": null,
+      "variaciones": [],
+      "publicado": true,
+      "notas": [
+        "Agregado el 2026-10-25 por pedido de FM. Precio $135.000 dado por FM.",
+        "Nombre propuesto por Claude a pedido de FM (\"invéntale nombre\")."
+      ]
+    }
+  ],
+  "confirmaciones": {
+    "fotos": "El cliente confirmó el 2026-10-25 que las 44 fotos son de Nina's Flowers.",
+    "whatsapp": "+57 314 300 9277 confirmado el 2026-10-25.",
+    "moneda": "COP (asumida, sin objeción del cliente).",
+    "ramos-45-46": "FM envió las fotos y el precio ($135.000 c/u) el 2026-10-25 y pidió inventarles nombre."
+  }
+}

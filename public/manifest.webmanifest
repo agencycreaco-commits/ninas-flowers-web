@@ -1,0 +1,16 @@
+{
+  "name": "Nina's Flowers",
+  "short_name": "Nina's Flowers",
+  "description": "Catálogo de ramos de Nina's Flowers con pedidos por WhatsApp.",
+  "lang": "es-CO",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8F5EF",
+  "theme_color": "#F8F5EF",
+  "icons": [
+    { "src": "/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
