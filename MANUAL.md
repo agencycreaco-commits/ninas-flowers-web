@@ -4,15 +4,13 @@ Esta es la web de Nina's Flowers: inicio, catálogo de 46 ramos con su ficha, p�
 
 ## Cómo se publica
 
-1. El código vive en GitHub, en el repositorio `ninas-flowers-web`.
-2. Cloudflare Pages (gratis) está conectado a ese repositorio. Cada vez que algo cambia en la rama `main`, Cloudflare construye y publica la web sola en 1 o 2 minutos.
-3. La configuración en Cloudflare Pages es:
-   - **Framework preset:** None
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-   - **Variable de entorno:** `NODE_VERSION` = `22`
+- Dirección actual: **https://ninasflowers.agencycreaco.workers.dev**
+1. El código vive en GitHub: `agencycreaco-commits/ninas-flowers-web`.
+2. Cloudflare Workers (gratis) está conectado a ese repositorio, en el proyecto `ninasflowers`. Cada vez que algo cambia en la rama `main`, Cloudflare construye y publica la web sola en 1 o 2 minutos.
+3. Configuración en Cloudflare: **Build command** `npm run build`, **Deploy command** `npx wrangler deploy`. El archivo `wrangler.jsonc` indica que se publica la carpeta `dist` (su `name` debe seguir siendo `ninasflowers`).
+4. Para usar un dominio propio (de pago, opcional): en Cloudflare, proyecto `ninasflowers` → **Domains** → **Add Domain**. Después pon esa dirección en `content/sitio.json` → `urlSitio`.
 
-Si algo sale mal en una publicación, la versión anterior sigue en línea. En Cloudflare, en **Deployments**, se puede volver a una versión anterior con **Rollback**.
+Si algo sale mal en una publicación, la versión anterior sigue en línea. En Cloudflare, en **Deployments**, se puede volver a una versión anterior.
 
 ## Cambios frecuentes (se pueden hacer desde la página de GitHub, sin instalar nada)
 
@@ -23,7 +21,7 @@ En GitHub, abre el archivo, toca el lápiz ✏️ (Edit), haz el cambio y toca *
 | Precio o nombre de un ramo | `content/catalogo.json` (campos `precio` y `nombre`). El precio va sin puntos: `185000`. |
 | Ocultar un ramo sin borrarlo | `content/catalogo.json`: pon `"publicado": false`. |
 | Número de WhatsApp | `content/sitio.json` (`whatsapp` con el 57 adelante, y `whatsappVisible` como se muestra). |
-| Dirección de la web (cuando tengan dominio) | `content/sitio.json` → `urlSitio`, por ejemplo `https://ninasflowers.com`. Así se activan el mapa del sitio para Google y los enlaces para compartir. |
+| Dirección de la web | `content/sitio.json` → `urlSitio`. Así se activan el mapa del sitio para Google y los enlaces para compartir. |
 | Textos del inicio | `src/pages/Inicio.tsx` |
 | Textos de Eventos | `src/pages/Eventos.tsx` |
 | Opciones del formulario (eventos, estilos, colores, elementos) | `src/data/eventos.ts` |
