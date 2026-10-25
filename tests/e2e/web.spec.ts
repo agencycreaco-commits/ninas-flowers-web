@@ -41,3 +41,11 @@ test('una dirección que no existe muestra la página 404', async ({ page }) => 
   expect(r?.status()).toBe(404)
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Esta página no existe')
 })
+
+test('ninguna página se corre de lado en el celular', async ({ page }) => {
+  for (const url of ['/', '/catalogo', '/ramo/ramo-01-rosita', '/eventos', '/eventos/disena']) {
+    await page.goto(url)
+    const { doc, vista } = await page.evaluate(() => ({ doc: document.documentElement.scrollWidth, vista: window.innerWidth }))
+    expect(doc, url).toBeLessThanOrEqual(vista)
+  }
+})

@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--color-fondo-principal);
   color: var(--color-texto-principal);
   font-family: var(--font-ui);
@@ -825,6 +826,10 @@ h3 {
   background: none;
   cursor: pointer;
 }
+.toolbar > *,
+.toolbar__row {
+  min-width: 0;
+}
 .toolbar__row {
   display: flex;
   flex-wrap: wrap;
@@ -833,6 +838,8 @@ h3 {
   gap: 12px;
 }
 .chips {
+  flex: 1 1 100%;
+  min-width: 0;
   display: flex;
   gap: 8px;
   overflow-x: auto;
@@ -1420,6 +1427,7 @@ h3 {
     align-items: center;
   }
   .chips {
+    flex: 1 1 auto;
     margin: 0;
     padding: 0;
   }
