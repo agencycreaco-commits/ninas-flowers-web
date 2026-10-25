@@ -1,0 +1,10 @@
+// Configuración para publicar en Cloudflare Workers (archivos estáticos de dist/).
+// El nombre debe ser igual al nombre del proyecto en Cloudflare.
+{
+  "name": "ninasflowers",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
