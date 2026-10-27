@@ -6,13 +6,20 @@
   box-sizing: border-box;
 }
 html {
+  /* Nada puede ensanchar la página hacia los lados (Safari en iPhone incluido). */
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 16px);
 }
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
 body {
   margin: 0;
-  overflow-x: clip;
   background: var(--color-fondo-principal);
   color: var(--color-texto-principal);
   font-family: var(--font-ui);
@@ -789,6 +796,7 @@ h3 {
 /* ---------------------------------------------------------------- catálogo */
 .toolbar {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
   position: sticky;
   top: var(--header-h);
@@ -843,9 +851,13 @@ h3 {
   display: flex;
   gap: 8px;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  margin-inline: calc(var(--gutter) * -1);
-  padding-inline: var(--gutter);
+  /* El ancho de la fila no depende de cuántos precios tenga: se desliza por dentro. */
+  contain: inline-size;
+  width: 100%;
+  max-width: 100%;
 }
 .chips::-webkit-scrollbar {
   display: none;
@@ -1428,8 +1440,7 @@ h3 {
   }
   .chips {
     flex: 1 1 auto;
-    margin: 0;
-    padding: 0;
+    width: auto;
   }
 }
 
