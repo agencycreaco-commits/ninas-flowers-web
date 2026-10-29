@@ -34,93 +34,84 @@ const NAV = [
   { to: '/eventos', label: 'Eventos', end: false },
 ]
 
+const MENU = [
+  { to: '/', label: 'Inicio', end: true },
+  { to: '/catalogo', label: 'Catálogo floral', end: false },
+  { to: '/eventos', label: 'Eventos', end: false },
+  { to: '/contacto', label: 'Contacto', end: false },
+]
+
 function Header() {
   const [abierto, setAbierto] = useState(false)
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   const wa = enlaceWhatsApp(mensajeGeneral())
 
-  useEffect(() => setAbierto(false), [pathname])
+  useEffect(() => setAbierto(false), [pathname, hash])
   useEffect(() => {
     if (!abierto) return
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setAbierto(false)
     document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
+    return () => document.removeEventListener('keydown', onKey)
   }, [abierto])
 
   return (
-    <header className="header">
-      <div className="header__inner wrap">
-        <Logo />
-        <nav className="nav" aria-label="Principal">
-          {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.end}>
-              {n.label}
-            </NavLink>
-          ))}
-          <Link to="/#como-pedir">Cómo pedir</Link>
-          {wa && (
-            <a href={wa} target="_blank" rel="noopener noreferrer">
-              Contacto
-            </a>
-          )}
-        </nav>
-        <div className="header__actions">
-          <Redes className="solo-escritorio" />
-          {wa && (
-            <a className="btn btn--primary btn--sm solo-escritorio" href={wa} target="_blank" rel="noopener noreferrer">
-              <IconWhatsApp size={18} /> WhatsApp
-            </a>
-          )}
-          <Link to="/catalogo" className="icon-btn solo-movil" aria-label="Buscar en el catálogo">
-            <IconSearch />
-          </Link>
-          <button
-            type="button"
-            className="icon-btn solo-movil"
-            aria-label="Abrir menú"
-            aria-expanded={abierto}
-            aria-controls="menu-movil"
-            onClick={() => setAbierto(true)}
-          >
-            <IconMenu />
-          </button>
+    <>
+      <header className="header">
+        <div className="header__inner wrap">
+          <Logo />
+          <nav className="nav" aria-label="Principal">
+            {NAV.map((n) => (
+              <NavLink key={n.to} to={n.to} end={n.end}>
+                {n.label}
+              </NavLink>
+            ))}
+            <Link to="/#como-pedir">Cómo pedir</Link>
+            <NavLink to="/contacto">Contacto</NavLink>
+          </nav>
+          <div className="header__actions">
+            <Redes className="solo-escritorio" />
+            {wa && (
+              <a className="btn btn--primary btn--sm solo-escritorio" href={wa} target="_blank" rel="noopener noreferrer">
+                <IconWhatsApp size={18} /> WhatsApp
+              </a>
+            )}
+            <Link to="/catalogo" className="icon-btn solo-movil" aria-label="Buscar en el catálogo">
+              <IconSearch />
+            </Link>
+            <button
+              type="button"
+              className="icon-btn solo-movil"
+              aria-label={abierto ? 'Cerrar menú' : 'Abrir menú'}
+              aria-expanded={abierto}
+              aria-controls="menu-movil"
+              onClick={() => setAbierto((a) => !a)}
+            >
+              {abierto ? <IconClose /> : <IconMenu />}
+            </button>
+          </div>
         </div>
-      </div>
+      </header>
 
-      <div id="menu-movil" className={`menu${abierto ? ' menu--abierto' : ''}`} role="dialog" aria-modal="true" aria-label="Menú" hidden={!abierto}>
-        <div className="menu__top wrap">
-          <Logo inverso />
-          <button type="button" className="icon-btn" aria-label="Cerrar menú" onClick={() => setAbierto(false)}>
-            <IconClose />
-          </button>
-        </div>
-        <nav className="menu__nav wrap" aria-label="Menú">
-          {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.end}>
+      {/* Fuera del header: su backdrop-filter encerraría un panel fijo dentro de la barra. */}
+      {abierto && <div className="menu-velo" aria-hidden="true" onClick={() => setAbierto(false)} />}
+      <div id="menu-movil" className="menu" role="dialog" aria-label="Menú" hidden={!abierto}>
+        <nav className="menu__nav" aria-label="Menú">
+          {MENU.map((n) => (
+            <NavLink key={n.to} to={n.to} end={n.end} onClick={() => setAbierto(false)}>
               {n.label}
             </NavLink>
           ))}
-          <Link to="/#como-pedir">Cómo pedir</Link>
-          {wa && (
-            <a href={wa} target="_blank" rel="noopener noreferrer">
-              Contacto
-            </a>
-          )}
         </nav>
-        <div className="menu__foot wrap">
+        <div className="menu__foot">
           {wa && (
-            <a className="btn btn--claro btn--block" href={wa} target="_blank" rel="noopener noreferrer">
-              <IconWhatsApp size={18} /> Escríbenos por WhatsApp
+            <a className="btn btn--primary btn--block btn--sm" href={wa} target="_blank" rel="noopener noreferrer">
+              <IconWhatsApp size={18} /> WhatsApp
             </a>
           )}
           <Redes />
         </div>
       </div>
-    </header>
+    </>
   )
 }
 
@@ -139,6 +130,7 @@ function Footer() {
           <Link to="/catalogo">Catálogo</Link>
           <Link to="/eventos">Eventos</Link>
           <Link to="/#como-pedir">Cómo pedir</Link>
+          <Link to="/contacto">Contacto</Link>
         </nav>
         <div>
           <p className="eyebrow">Contacto</p>

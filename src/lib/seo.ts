@@ -53,6 +53,15 @@ export function metaFor(pathname: string): Meta {
       status: 200,
     }
   }
+  if (path === '/contacto') {
+    return {
+      title: `Contacto · ${SITE_NAME}`,
+      description: `Escríbele a ${SITE_NAME} por WhatsApp y síguenos en Instagram y TikTok.`,
+      path,
+      image: ogDefault,
+      status: 200,
+    }
+  }
   const m = path.match(/^\/ramo\/([^/]+)$/)
   const p = m ? getProducto(m[1]) : undefined
   if (p) {

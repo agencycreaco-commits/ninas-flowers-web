@@ -18,4 +18,4 @@ export function render(url: string) {
 }
 
 /** Rutas que se generan como HTML estático. */
-export const rutas = ['/', '/catalogo', '/eventos', '/eventos/disena', ...productos.map((p) => `/ramo/${p.id}`)]
+export const rutas = ['/', '/catalogo', '/eventos', '/eventos/disena', '/contacto', ...productos.map((p) => `/ramo/${p.id}`)]

@@ -36,6 +36,21 @@ test('el formulario de eventos valida, conserva respuestas y arma el mensaje', a
   expect(href).toContain('Elementos florales que necesito: Centros de mesa.')
 })
 
+test('el menú del celular abre un panel con accesos y lleva a contacto', async ({ page, isMobile }) => {
+  test.skip(!isMobile, 'El botón de menú solo existe en celular')
+  await page.goto('/')
+  await page.getByRole('button', { name: 'Abrir menú' }).click()
+  const menu = page.getByRole('dialog', { name: 'Menú' })
+  await expect(menu).toBeVisible()
+  const caja = await menu.boundingBox()
+  expect(caja?.height ?? 0).toBeGreaterThan(250)
+  for (const n of ['Inicio', 'Catálogo floral', 'Eventos', 'Contacto']) await expect(menu.getByRole('link', { name: n, exact: true })).toBeVisible()
+  await menu.getByRole('link', { name: 'Contacto', exact: true }).click()
+  await expect(page).toHaveURL(/\/contacto$/)
+  await expect(menu).toBeHidden()
+  await expect(page.getByRole('link', { name: /Instagram/ }).first()).toBeVisible()
+})
+
 test('una dirección que no existe muestra la página 404', async ({ page }) => {
   const r = await page.goto('/no-existe')
   expect(r?.status()).toBe(404)
@@ -43,7 +58,7 @@ test('una dirección que no existe muestra la página 404', async ({ page }) => 
 })
 
 test('ninguna página se corre de lado en el celular', async ({ page }) => {
-  for (const url of ['/', '/catalogo', '/ramo/ramo-01-rosita', '/eventos', '/eventos/disena']) {
+  for (const url of ['/', '/catalogo', '/ramo/ramo-01-rosita', '/eventos', '/eventos/disena', '/contacto']) {
     await page.goto(url)
     const { doc, vista } = await page.evaluate(() => ({ doc: document.documentElement.scrollWidth, vista: window.innerWidth }))
     expect(doc, url).toBeLessThanOrEqual(vista)
